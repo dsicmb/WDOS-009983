@@ -1,0 +1,138 @@
+
+* {box-sizing : border-box}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #F7D7B5 ;
+    margin: 0.5em 0;
+  }
+
+  h2 
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  
+
+/* Styling the body */
+body 
+{
+  font-family : Helvetica, Arial, sans-serif;
+  background-color :  #231F20 ;
+  font-style: normal;
+}
+
+.container-seal
+{
+ border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+ background : #3D453E ;
+ color : #F7D7B5 ;
+ font-size : 20px ;
+ padding: 10px 100px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+ text-align: justify;
+}
+
+/* Styling the link of contact us  */
+.cu a
+{
+  position : relative ;
+  color : #C0C0C0 ;
+  text-decoration : none;
+  font-size : 17px;
+}
+
+ .cu a:hover
+{
+  color : #F7D7B5 ;
+  border-bottom : 1px solid #F7D7B5 ; /*Bottom Border Nav Link*/
+}
+
+
+/* -------------Styling the ordered list bullets-------- */
+
+
+
+ol.zero-number
+{
+list-style-type : decimal-leading-zero ;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.seal-row 
+{
+  margin : 0 -5px;
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.seal-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+
+
+
+/* -------------Styling the ANIMAL TABLE attributes-------- */
+
+table, th
+{
+  padding : 15px; /*Cell padding specifies the space between the cell content and its borders.*/
+  text-align: center;
+}
+
+td
+{
+  width : 100% ;
+  text-align: center;
+}
+
+td:hover 
+{
+  background-color : #F7D7B5 ;
+  color : #800000 ;
+}
+
+th
+{
+  background-color : #3D453E ;
+  color : #F7D7B5 ;
+}
+
+.seal-table 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* AddFing padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 3.5); /* changing the boder shadow on hover */
+}

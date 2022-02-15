@@ -1,0 +1,233 @@
+* {box-sizing : border-box}
+
+/* Styling the body */
+body 
+{
+  font-family : Helvetica, Arial, sans-serif;
+  background-color :  #231F20 ;
+}
+
+html
+{
+scroll-behavior : smooth ;
+}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+ h2 
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #800000 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  /* Styling the container */
+
+  .container1
+  {
+   border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+   background-color : #F2F2F2 ;
+   padding : 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+   
+ }
+
+ .container2
+ {
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  background : #3D453E ;
+  color : #F7D7B5 ;
+  font-size : 20px ;
+  padding : 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  text-align: justify;
+ 
+}
+
+
+/* -------------Styling the ANIMAL TABLE attributes-------- */
+
+table, th
+{
+  border: 1px solid #F1F1F1;
+  padding : 15px; /*Cell padding specifies the space between the cell content and its borders.*/
+  text-align: center;
+}
+
+td
+{
+  width : 20% ;
+  text-align: justify;
+}
+
+td:hover 
+{
+  background-color : #F7D7B5 ;
+  color : #800000 ;
+}
+
+th
+{
+  background-color : #3D453E ;
+  color : #F7D7B5 ;
+}
+
+.animal-table 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* AddFing padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+/* Styling the links inside the table footer  */
+.animal-table-foot a
+{
+  position : relative ;
+  color : #C0C0C0 ;
+  text-decoration : none;
+  font-size : 17px;
+}
+
+/* Changing the Main Navbar links with the HOVER effect */
+.animal-table-foot a:hover
+ {
+  color : #F7D7B5 ;
+}
+
+
+/* -------------Styling the PLANT TABLE attributes-------- */
+
+table, th, td 
+{
+  border: 3px solid black;
+  padding : 15px; /*Cell padding specifies the space between the cell content and its borders.*/
+}
+
+td:hover 
+{
+  background-color : #F7D7B5 ;
+  color : #800000 ;
+}
+
+th
+{
+  background-color : #3D453E ;
+  color : #F7D7B5 ;
+}
+
+.plant-table 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Styling the links inside the table footer  */
+.plant-table-foot a
+{
+  position : relative ;
+  color : #C0C0C0 ;
+  text-decoration : none;
+  font-size : 17px;
+}
+
+/* Changing the Main Navbar links with the HOVER effect */
+.plant-table-foot a:hover
+ {
+  color : #F7D7B5 ;
+}
+
+#collective-noun
+  {
+    width: 50%;
+    height : auto ;
+    padding: 12px;
+    border: 1px solid #FFFFFF ;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #800000 ;
+  }
+
+
+/* -------------Styling the MAIN IMAGE text attributes-------- */
+
+.main-pic 
+{
+ padding : 0 ;
+ height : 100% ; 
+
+ /* Center and scale the image properly */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* Styling the 5 plant pictures at the bottom with the shadow effect */
+
+/* Float four columns side by side */
+.plants-bottom-column 
+{
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.plants-bottom-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.plants-bottom-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  text-align: justify;
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 3.5); /* changing the boder shadow on hover */
+}
+
+
+@media screen and (max-width: 700px) 
+{
+  body {font-size : 10px ;}
+  .card {font-size : 10px ; padding : 5px 5px 5px ;}
+  .container1{font-size : 10px ; padding : 5px 10px 5px ;}
+  .container2{font-size : 13px ; padding : 5px 10px 5px ;} 
+  #collective-noun {font-size : 13px ;  width: 100%;}
+  .plants-bottom-row { display : none ;}
+  hr { display : none ;}
+  .main-pic {padding : 5px 1px 5px ;} 
+}

@@ -1,0 +1,183 @@
+
+* {box-sizing : border-box}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #C0C0C0 ;
+    margin: 0.5em 0;
+  }
+
+  h2 
+  {
+    font-family : Georgia,Garamond ,serif ;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+
+/* Styling the body */
+body 
+{
+  font-family : Courier New ;
+  background-color :  #231F20 ;
+  font-style: oblique;;
+}
+
+html
+{
+scroll-behavior : smooth ;
+}
+
+.container-panda
+{
+ border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+ background : #332211 ;
+ color : #C0C0C0 ;
+ font-size : 20px ;
+ padding: 10px 100px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+ text-align: justify;
+
+}
+
+
+ol.small-roman
+{
+list-style-type : lower-roman;
+}
+
+/* Styling the link of contact us  as a button */
+.cu a
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-weight : none;
+  font-size: 17px ;
+  padding : 12px 20px;
+  border : 2px solid #008080;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration : none ;
+}
+
+
+
+/* Hovering effect on the buttons */
+
+.cu a:hover 
+{
+  background-color : #FFFFFF;
+  color : #008080;
+  border : 2px solid #008080 ;
+}
+
+
+
+/* Remove extra left and right margins, due to padding in columns */
+.panda-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.panda-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+
+
+
+/* -------------Styling the ANIMAL TABLE attributes-------- */
+
+table, th
+{
+  padding : 15px; /*Cell padding specifies the space between the cell content and its borders.*/
+  text-align: center;
+  border : 1px solid #F1F1F1 ;
+}
+
+td
+{
+  width : 100% ;
+  text-align: center;
+}
+
+th
+{
+  background-color : #C0C0C0 ;
+  color : #008080 ;
+}
+
+tr:nth-child(even)
+{
+  background-color: #F2F2F2;
+}
+
+tr:nth-child(odd)
+{
+  background-color: #FFFFFF;
+}
+
+
+.panda-table 
+{
+  margin : 0 -5px;
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* AddFing padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 25px 25px 25px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #3D453E  ; /* Making the background color light grey */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  transition: transform .2s;
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 3.5); /* changing the boder shadow on hover */
+  transform: scale(1.1);
+}
+
+/* Style the cards */
+.card-x
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 25px 25px 25px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color :#C0C0C0 ; /* Making the background color light grey */
+  border-radius : 50% ; /* Making the border edges tapered to a 5px radius */
+  transition: transform .2s;
+}
+
+.card-x:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 3.5); /* changing the boder shadow on hover */
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) 
+{
+  body { font-size : 10px ;}
+  .motive-pics-column { display : none ;}
+  .card {padding : 5px 1px 5px ;}
+}

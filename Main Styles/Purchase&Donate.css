@@ -1,0 +1,252 @@
+
+* {box-sizing : border-box}
+
+/* Styling the body */
+body
+{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color :  #231F20 ;
+}
+
+html
+{
+scroll-behavior : smooth ;
+}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h2
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #F7D7B5 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+
+   /* -------------Styling the MAIN IMAGE text attributes-------- */
+
+   .main-pic 
+   {
+    padding : 0 ;
+    height : 100% ; 
+  
+    /* Center and scale the image properly */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Styling the inputs */
+
+  input[type = text ] 
+  {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #FFFFFF ;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+    font-size : 20px ;
+    color : #0000FF ;
+  }
+
+
+  input[type = textarea ] 
+  {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #0000FF ;
+  }
+  
+  input[type = email ] 
+  {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #0000FF ;
+  }
+
+
+  
+  /* Styling the button */
+
+  input[type = submit] 
+  {
+    background-color: #008080;
+    color: #FFFFFF;
+    font-weight : bold;
+    font-size: 24px;
+    padding : 12px 20px;
+    border : 2px solid #FFFFFF ;
+    cursor: pointer;
+    
+  }
+
+  /* Hovering effect on the button */
+
+  input[type = submit]:hover 
+  {
+    background-color : #FFFFFF;
+    color : #008080;
+    border : 2px solid #FF7F00 ;
+  }
+  
+  /* Styling the container */
+
+  .container1
+  {
+   border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+   background-color : #F2F2F2 ;
+   padding : 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+   text-align: justify;
+   
+ }
+
+ .container2
+ {
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  background : #3D453E ;
+  color : #F7D7B5 ;
+  font-size : 20px ;
+  padding : 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  text-align: justify;
+}
+  
+  /* Creating three columns that float next to each other */
+
+   .column 
+  {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clearing the floats after the columns */
+
+   .row:after
+    {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* ----- attributes of the CARD BRAND icons ----- */
+
+ul.brand-icons
+{
+margin:0;
+padding: 0;
+}
+
+ul.brand-icons li
+{
+  background:#6D6E71;
+  width:97px;
+  height:67px;
+  border:1px solid #6D6E71; 
+  border-radius:2px;
+  margin:3px;
+  text-align:center; 
+  display: inline-block;
+}
+
+/* color of the icon border without the hover */
+ul.brand-icons li 
+{
+  color : #6D6E71 ;
+}
+
+/* color change of the icon border WITH the hover */
+ul.brand-icons li:hover
+{
+  color : #F7D7B5 ;
+}
+
+/* removing the list bullets */
+ul.brand-icons 
+{ 
+  padding: 0;  
+  list-style-type: none; 
+  position: relative;
+  
+} 
+
+/* Styling the 3 CARING , CONSERVING , SAVING pictures with the shadow effect */
+
+/* Float four columns side by side */
+.motive-pics-column 
+{
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.motive-pics-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.motive-pics-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 30px ; /* Text size  */
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+}
+
+
+@media screen and (max-width: 700px) 
+{
+  body {font-size : 10px ;}
+  .card {font-size : 10px ;}
+  .container1{font-size : 10px ; padding : 5px 10px 5px ;}
+  .container2{font-size : 13px ; padding : 5px 10px 5px ;}
+}

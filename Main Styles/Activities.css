@@ -1,0 +1,143 @@
+
+* {box-sizing : border-box}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #F7D7B5;
+    margin: 0.5em 0;
+  }
+
+ h2 
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+/* Styling the body */
+body 
+{
+  font-family : Helvetica, Arial, sans-serif;
+  background-color : #231F20 ;
+}
+
+html
+{
+scroll-behavior : smooth ;
+}
+
+/* Styling the container/contact section */
+
+.head-container
+{
+ border-radius: 5px;
+ background-color: #C4A484 ;
+ padding: 50px;
+}
+
+.container1
+{
+border-radius: 5px;
+background:#3D453E;
+color:#F7D7B5;
+padding: 50px;
+}
+
+/* converting a link into a button */
+
+.link-page a
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-weight : none;
+  font-size: 17px ;
+  padding : 12px 20px;
+  border : 2px solid #008080;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration : none ;
+}
+
+/* Hovering effect on the buttons */
+
+.link-page a:hover 
+{
+  background-color : #FFFFFF;
+  color : #008080;
+  border : 2px solid #008080 ;
+}
+
+/* -------------Styling the MAIN IMAGE text attributes-------- */
+
+.main-pic 
+{
+ padding : 0 ;
+ height : 100% ; 
+
+ /* Center and scale the image properly */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+/* Styling the 2 green images with shadow effect */
+
+/* Float four columns side by side */
+.green-column 
+{
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.green-row 
+{
+  margin : 0 -5px;
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.green-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 3.5); /* changing the boder shadow on hover */
+}
+
+@media screen and (max-width: 700px) 
+{
+  body {font-size : 10px ;}
+  .card {font-size : 10px ;}
+  .container1{font-size : 10px ; padding : 5px 2px 5px ;}
+  .container2{font-size : 13px ; padding : 5px 2px 5px ; }
+}

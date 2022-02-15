@@ -1,0 +1,384 @@
+
+/* Styling the body */
+body 
+{
+  font-family : Helvetica, Arial, sans-serif;
+  background-color :  #231F20 ;
+}
+
+html
+{
+scroll-behavior : smooth ;
+}
+
+/* Styling the headlines */
+
+h1  
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #F7D7B5 ;
+    margin: 0.5em 0;
+  }
+
+ h2 
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h4
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #800000 ;
+    margin: 0.5em 0;
+  }
+
+
+  /* -------------Styling the ordered list bullets-------- */
+
+  ol.small-roman
+  {
+  list-style-type : lower-roman;
+  }
+
+  ol.zero-number
+  {
+  list-style-type : decimal-leading-zero ;
+  }
+
+
+
+/* -------------Styling the MAIN IMAGE text attributes-------- */
+
+.main-pic 
+{
+ padding : 0 ;
+ height : 100% ; 
+ 
+ /* Center and scale the image properly */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+ /* Styling the container/contact section */
+
+ .container1
+ {
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  background-color: #F7D7B5;
+  padding: 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  text-align: justify;
+}
+
+.container2
+{
+ border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+ background : #3D453E ;
+ color : #F7D7B5 ;
+ font-size : 20px ;
+ padding: 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+ text-align: justify;
+}
+
+
+/* Styling the table */
+table, th, tr, td 
+{
+  border : 5px solid ;
+  border-color : transparent;
+  padding : 1px; /*Cell padding specifies the space between the cell content and its borders.*/
+}
+
+td
+{
+  width : 33% ;
+}
+
+td:hover 
+{
+  color : #800000 ;
+}
+
+
+/*----------- Styling the 2 main video columns ------------ */
+
+/* Float four columns side by side */
+.main-video-column 
+{
+  float : left ;
+  padding: 0 10px ;
+  text-align : justify ;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.main-video-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+   /* Center and scale the image properly */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.main-video-para
+{
+    text-align : justify;
+}
+
+/* Clear floats after the columns */
+.main-video-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+/*----------- Styling the 2  INTRO columns ------------ */
+
+/* Float four columns side by side */
+.intro-column 
+{
+  float : left ;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.intro-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+.intro-para
+{
+  text-align: justify;
+}
+
+/* Clear floats after the columns */
+.intro-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+/* Style the intro-cards */
+.intro-card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 18px ; /* Text size  */
+}
+
+.intro-card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+}
+
+/*----------- Styling the 3 SUBSECTIONS linked to 3 webpages ------------ */
+
+/* Float four columns side by side */
+.new-column 
+{
+  float: left;
+  padding: 0 10px;
+ 
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.new-row 
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+/* Clear floats after the columns */
+.new-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+/* Styling the history-card */
+.new-card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 18px ; /* Text size  */
+  transition: transform .2s;
+}
+
+.new-card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+  transform: scale(1.1);
+}
+
+.new-para
+{
+border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+background : #3D453E ;
+color : #F7D7B5 ;
+font-size : 17px ;
+padding: 20px 10px 20px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+text-align: center ;
+
+}
+
+.new-para a
+{
+  color : #FFFFFF ;
+  text-decoration : none;
+}
+
+.new-para a:hover
+{
+  color : #F7D7B5 ;
+  border-bottom : 1px solid #F7D7B5 ; /*Bottom Border Nav Link*/
+}
+
+.policy
+  {
+    width: 50%;
+    height : auto ;
+    padding: 12px;
+    border: 1px solid #FFFFFF ;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #800000 ;
+  }
+
+
+/* converting a link into a button */
+
+.link-page a
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-weight : none;
+  font-size: 17px ;
+  padding : 12px 20px;
+  border : 2px solid #008080;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration : none ;
+}
+
+/* Hovering effect on the buttons */
+
+.link-page a:hover 
+{
+  background-color : #FFFFFF;
+  color : #008080;
+  border : 2px solid #008080 ;
+}
+
+/* Styling the map section */
+
+.map-column 
+{
+  float: left;
+  padding : 0 10px 0;
+  height : 100% ;
+  width : 100%
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.map-row 
+{
+  margin : 0 ;
+  background-color : #FFFFFF ;
+  padding : 50px 10px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+
+/* Clear floats after the columns */
+.map-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+ }
+
+#collective-noun
+  {
+    width: 50%;
+    height : auto ;
+    padding: 12px;
+    border: 1px solid #FFFFFF ;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #800000 ;
+  }
+
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 18px ; /* Text size  */
+  text-align: justify;
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+}
+
+@media screen and (max-width: 700px) 
+{
+  body {font-size : 10px ;}
+  .card {font-size : 10px ;}
+  .indigenous-feline-column {width: 100%; }
+  .container1{font-size : 10px ; padding : 5px 10px 5px ;} 
+  .container2{font-size : 13px ; padding : 5px 10px 5px ;}
+  .intro-para {font-size : 13px ;}
+  .history-para {font-size : 13px ;}
+  .aquarium-para {font-size : 13px ;  width: 100% ;}
+  #collective-noun {font-size : 13px ;  width: 100%;}
+  .fish-column { display: none ;}
+  .fish-row {display : none;}
+  .aquarium-card { display : none ;}
+  .card {width: 100%; padding : 1px 1px 1px ;}
+  .new-column {width: 100%; }
+  table { resize: both; overflow: auto;}
+  .map-column {width: 100%; height :"auto";}
+  .home-bottom-column {display : none;}
+  .main-pic{padding : 1px 1px 1px ;}
+  
+}
+
